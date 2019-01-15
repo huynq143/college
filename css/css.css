@@ -1,0 +1,248 @@
+#main {
+	width: 1000px;
+	margin: auto;
+}
+.banner{
+	background:url(../images/banner.png) no-repeat;	
+	background-size:100% 100%;
+	height:150px;
+	padding-bottom:25px;
+}
+.menu {
+	background-color: #06F;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	text-decoration: none;
+	height: 40px;
+	position: relative;
+}
+.menu>li {
+	display: inline-block;
+	padding: 10px 15px;
+	
+	margin-left: -5px;
+	cursor: pointer;
+	position:relative;
+	transition:0.8s;
+}
+
+.menu>li:hover {
+	background-color: white;
+}
+.menu>li>a {
+	color: #000;
+}
+.menu>li:hover>a {
+	color: #06F;
+}
+.menu>li>a:active {
+	color: #F00
+}
+a {
+	text-decoration: none;
+}
+a:visited {
+	color: #CCC
+}
+a:link {
+	color: #000
+}
+a:hover {
+	color: #F00
+}
+a:active {
+	color: #0F0
+}
+
+.menu>li a{
+	color:white;
+	font-variant:small-caps;	
+}
+.menucon {
+	background-color:#06F;
+	position: absolute;
+	list-style: none;
+	margin-top: 10px;
+	display: none;
+	padding: 0px 0px;
+	border-radius:3px;
+	left:0;
+	white-space:nowrap;
+	text-align:left;
+}
+.menucon>li{
+	border-bottom:1px dotted white;
+	padding:6px 8px;
+	
+}
+.menucon>li:last-child{
+	border:none;	
+}
+.menucon>li:hover>a {
+	color: #06F;
+}
+.menucon>li:hover {
+	background-color:white;
+}
+.menu>li:hover>ul.menucon {
+	display: block;
+	animation:hieudung-menu-con 0.3s ease-in-out none;
+	z-index:1;
+
+}
+@keyframes hieudung-menu-con{
+	from{transform:rotateY(90deg) rotateZ(20deg) scaleX(0);}
+	to{tranform:rotateY(0deg) rotateZ(0deg);}
+
+}
+/* Content */
+.left {
+	width: 75%;
+	float: left;
+}
+.right {
+	
+	width: 25%;
+	float: right;
+	height: 500px;
+	/*background-color: #0FF;*/
+}
+.left-left{
+	width:49.6%;
+	/*
+	background-color:yellow;
+	*/
+	height:425px;
+	float:left;
+	border:1px solid grey;
+	position:relative;
+	border-radius:5px;
+}
+.left-right{
+	width:49.6%;
+	/*
+	background-color:green;
+	*/
+	height:425px;
+	float:right;
+	border:1px solid grey;
+	position:relative;
+	border-radius:5px;
+}
+.tieude-tin{
+	min-height:40px;
+	padding:5px;
+	cursor:pointer;
+}
+.ngaydangtin{
+	color:grey;	
+}
+
+.hinh-tin{
+	width:150px;
+	float:left;	
+	height:120px;
+}
+
+.noidung-tin{
+	min-height:152px;
+	
+}
+.tinkhac{
+	border-bottom:1px dotted grey;
+	padding-bottom:8px;
+}
+
+.xemtatca{
+	float:right;
+	right:10px;
+	bottom:10px;
+	position:absolute;	
+}
+
+
+/*tiêu đề các mục trang chủ*/
+.trangchu-tieude{
+	text-align:center;
+	background-color:#06F;
+	border-radius:4px;
+	color:white;
+	font-size:18px;
+	padding:5px;
+}
+.hr {
+	clear: both;
+}
+/*---------*/
+/*right*/
+.right-hinh{
+	width:248px;
+	height:200px;
+	border:1px solid grey;	
+}
+/*---------------*/
+/*Footer*/
+.footer {
+	clear: both;
+}
+/*---------*/
+.breadcrumbs{
+	background-color:#06F;
+	height:22px;
+	font-weight:bold;
+	width:100%;
+	clear:both;
+	color:white;
+	border:1px solid grey;
+	border-radius:5px ;
+	padding:7px;
+}
+footer{
+	text-align:center;
+	background-color:#06F;
+	border-radius:5px;
+	color:white;
+	padding:5px 0px;
+}
+.list tr:nth-child(2n+1)
+{
+background-color:#CCC;
+}
+
+.rowspan{
+	background-color:white;	
+}
+th{
+	background-color:#06F;
+}
+
+.nhom-nganh{
+	background-color:#0CF;	
+}
+/*---------------*/
+.center {
+    text-align: center;
+}
+
+.pagination {
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #ddd;
+    margin: 0 4px;
+}
+
+.pagination a.active {
+    background-color: #06F;
+    color: white;
+    border: 1px solid #4CAF50;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
